@@ -1,0 +1,21 @@
+import SwiftUI
+struct ContentView: View {
+    let studentName = "Manoj"
+    let studentAge = 21
+    let degree = "Artificial Intelligence and Data Science"
+    let currentlyStudying = true
+    var body: some View {
+        VStack(alignment: .leading, spacing: 14) { 
+            Text("Student Information")
+                .font(.title2)
+                .fontWeight(.bold)
+            Divider()
+            Text("Student Name: \(studentName)")
+            Text("Age: \(studentAge)")
+            Text("Degree: \(degree)")
+            Text("Status: \(currentlyStudying ? "Currently Studying" : "Not Enrolled")")
+                .foregroundColor(currentlyStudying ? .green : .red)
+        }
+        .padding(25)
+    }
+}
