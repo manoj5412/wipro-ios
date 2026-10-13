@@ -1,0 +1,36 @@
+import SwiftUI
+struct ContentView: View {
+    let pythonMark = 88
+    let databaseMark = 76
+    let webMark = 92
+    var totalMarks: Int {
+        pythonMark + databaseMark + webMark
+    }
+    var averageMark: Double {
+        Double(totalMarks) / 3.0
+    }
+    var body: some View {
+        VStack(spacing: 18) {  
+            Text("Student Performance")
+                .font(.title)
+                .fontWeight(.bold)
+            VStack(alignment: .leading, spacing: 12) {
+                Text("Python: \(pythonMark)")
+                Text("Database: \(databaseMark)")
+                Text("Web Development: \(webMark)")
+            }
+            .font(.headline)
+            Divider()
+            Text("Total Marks: \(totalMarks)")
+                .fontWeight(.semibold)
+            Text("Average: \(averageMark, specifier: "%.1f")")
+                .fontWeight(.semibold)
+                .foregroundColor(.blue)
+        }
+        .padding(25)
+    }
+}
+
+#Preview {
+    ContentView()
+}
