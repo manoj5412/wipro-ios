@@ -1,0 +1,18 @@
+import SwiftUI
+struct ContentView: View {
+    let studentName = "Manoj"
+    let studentAge = 21
+    let enrolled = true
+    var body: some View {
+        VStack(spacing: 15) {
+            Text("Student Profile")
+                .font(.title2)
+                .fontWeight(.bold)
+            Text("Name: \(studentName)")
+            Text("Age: \(studentAge)")
+            Text("Enrollment Status: \(enrolled ? "Active" : "Inactive")")
+                .foregroundColor(enrolled ? .green : .red)
+        }
+        .padding(20)
+    }
+}
