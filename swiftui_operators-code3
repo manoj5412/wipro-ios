@@ -1,0 +1,8 @@
+let firstValue = 15
+let secondValue = 25
+print("Equal: \(firstValue == secondValue)")
+print("Not Equal: \(firstValue != secondValue)")
+print("Greater Than: \(firstValue > secondValue)")
+print("Less Than: \(firstValue < secondValue)")
+print("Greater Than or Equal: \(firstValue >= secondValue)")
+print("Less Than or Equal: \(firstValue <= secondValue)")
