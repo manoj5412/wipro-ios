@@ -1,0 +1,19 @@
+import SwiftUI
+struct ContentView: View {
+    var body: some View {
+        VStack(spacing: 16) {
+            Text("Basic Math Operations")
+                .font(.title)
+                .fontWeight(.bold)
+            let firstNumber = 20
+            let secondNumber = 8
+            Text("Addition: \(firstNumber + secondNumber)")
+            Text("Subtraction: \(firstNumber - secondNumber)")
+            Text("Multiplication: \(firstNumber * secondNumber)")
+            Text("Division: \(Double(firstNumber) / Double(secondNumber))")
+            Text("Remainder: \(firstNumber % secondNumber)")
+        }
+        .font(.system(size: 20))
+        .padding()
+    }
+}
