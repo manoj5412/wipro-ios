@@ -1,0 +1,21 @@
+import SwiftUI
+struct ContentView: View {
+    var body: some View {
+        let studentName = "Manoj"
+        let studentAge = 21
+        let department = "AI & Data Science"
+        let registerNumber = "23AD123"
+        let studentHeight = 5.8
+        VStack(alignment: .leading, spacing: 16) {
+            Text("Student Details")
+                .font(.title2)
+                .fontWeight(.bold)
+            Text("Student: \(studentName)")
+            Text("Age: \(studentAge) years")
+            Text("Department: \(department)")
+            Text("Register No: \(registerNumber)")
+            Text("Height: \(studentHeight, specifier: "%.1f") ft")
+        }
+        .padding()
+    }
+}
