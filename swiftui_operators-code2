@@ -1,0 +1,10 @@
+var score = 25
+print("Starting score: \(score)")
+score += 5
+print("After adding 5: \(score)")
+score -= 3
+print("After subtracting 3: \(score)")
+score *= 2
+print("After multiplying by 2: \(score)")
+score /= 4
+print("After dividing by 4: \(score)")
