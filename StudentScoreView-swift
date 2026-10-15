@@ -1,0 +1,15 @@
+import SwiftUI
+struct ContentView: View {
+    var body: some View {
+        let student = "Manoj"
+        let score = 87
+        HStack(spacing: 10) {
+            Text("Student:")
+                .fontWeight(.bold)
+            Text(student)
+            Text("Score: \(score)")
+                .foregroundColor(.blue)
+        }
+        .padding()
+    }
+}
