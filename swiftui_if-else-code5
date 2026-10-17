@@ -1,0 +1,23 @@
+import SwiftUI
+struct ContentView: View {
+    let mark = 85
+    var body: some View {
+        VStack {
+            Text("Student Result")
+            Text("Mark: \(mark)")
+            if mark >= 90 {
+                Text("Grade: A+")
+            } else if mark >= 80 {
+                Text("Grade: A")
+            } else if mark >= 70 {
+                Text("Grade: B")
+            } else if mark >= 60 {
+                Text("Grade: C")
+            } else if mark >= 50 {
+                Text("Grade: D")
+            } else {
+                Text("Grade: Fail")
+            }
+        }
+    }
+}
