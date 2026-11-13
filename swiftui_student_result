@@ -1,0 +1,34 @@
+import Foundation
+let name = "Manoj"
+let mark1 = 99
+let mark2 = 60
+let mark3 = 75
+let mark4 = 35
+let mark5 = 58
+let totalMarks = mark1 + mark2 + mark3 + mark4 + mark5
+let average = Double(totalMarks) / 5.0
+let isPassed = mark1 >= 35 &&
+               mark2 >= 35 &&
+               mark3 >= 35 &&
+               mark4 >= 35 &&
+               mark5 >= 35
+var grade: String
+if !isPassed {
+    grade = "F"
+} else if average >= 90 {
+    grade = "A"
+} else if average >= 75 {
+    grade = "B"
+} else if average >= 60 {
+    grade = "C"
+} else if average >= 50 {
+    grade = "D"
+} else {
+    grade = "F"
+}
+print("===== STUDENT RESULT =====")
+print("Name: \(name)")
+print("Total Marks: \(totalMarks)")
+print("Average: \(average)")
+print("Grade: \(grade)")
+print("Result: \(isPassed ? "PASS" : "FAIL")")
