@@ -1,0 +1,12 @@
+import SwiftUI
+struct ContentView: View {
+    let students = ["Manoj", "Arun", "Rahul", "Vijay"]
+    var body: some View {
+        VStack {
+            Text("Student List")
+            ForEach(students, id: \.self) { student in
+                Text(student)
+            }
+        }
+    }
+}
