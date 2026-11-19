@@ -1,0 +1,13 @@
+import SwiftUI
+struct ContentView: View {
+    let marks = [85, 90, 75, 95, 80]
+    var body: some View {
+        VStack {
+            Text("Student Marks")
+                .font(.title)
+            ForEach(marks.indices, id: \.self) { index in
+                Text("Student \(index + 1): \(marks[index])")
+            }
+        }
+    }
+}
