@@ -1,0 +1,15 @@
+func calculator(a: Int, b: Int, operation: String) -> Int {
+    if operation == "+" {
+        return a + b
+    } else if operation == "-" {
+        return a - b
+    } else if operation == "*" {
+        return a * b
+    } else if operation == "/" {
+        return a / b
+    } else {
+        return 0
+    }
+}
+print(calculator(a: 10, b: 5, operation: "+"))
+print(calculator(a: 10, b: 5, operation: "*"))
