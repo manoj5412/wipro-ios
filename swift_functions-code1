@@ -1,0 +1,14 @@
+import SwiftUI
+struct ContentView: View {
+    func add(a: Int, b: Int) -> Int {
+        return a + b
+    }
+    var body: some View {
+        VStack {
+            Text("Simple Calculator")
+                .font(.title)
+
+            Text("Result: \(add(a: 10, b: 20))")
+        }
+    }
+}
