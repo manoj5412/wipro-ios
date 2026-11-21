@@ -1,0 +1,5 @@
+func calculateTotal(mark1: Int, mark2: Int, mark3: Int) -> Int {
+    return mark1 + mark2 + mark3
+}
+let total = calculateTotal(mark1: 85, mark2: 90, mark3: 80)
+print("Total Marks: \(total)")
